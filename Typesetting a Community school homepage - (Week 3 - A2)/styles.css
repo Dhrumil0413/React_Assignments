@@ -1,0 +1,155 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'custom_josefin_bold';
+  src: url('josefinslab-bold-webfont.woff2') format('woff2'),
+       url('josefinslab-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom_abhaya_regular';
+  src: url('abhayalibre-regular-webfont.woff2') format('woff2'),
+       url('abhayalibre-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-family: "custom_abhaya_regular", serif;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  font-family: "custom_josefin_bold", slab-serif;
+  letter-spacing: 1.2px;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h2 + p {
+  text-indent: 2rem;
+}
+
+p,
+li {
+  line-height: 1.6;
+  letter-spacing: 0.6px;
+  word-spacing: 1.2px;
+}
+
+a {
+  outline: none;
+}
+
+a:active {
+  background-color: lightblue;
+  color: yellow;
+}
+
+a[href*="http"] {
+  padding-right: 12px;
+  background: url(External_link_font_awesome.svg.png) no-repeat 100% 0;
+  background-size: 10px 10px;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover {
+  color: #b66;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2.2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3.2;
+  text-align: center;
+  font-size: 1.6rem;
+  border: 1px solid #b66;
+}
+
+nav li a:focus,
+nav li a:hover {
+  color: #fff;
+  background: #b66;
+}
+
+nav li a:active {
+  color: #ffebcd;
+  background: #8b0000;
+}
